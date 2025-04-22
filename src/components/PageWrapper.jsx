@@ -25,7 +25,7 @@ export default function PageWrapper({ children }) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="w-full h-full overflow-hidden"
+      className="w-full h-full lg:overflow-hidden"
     >
       {children}
     </motion.div>

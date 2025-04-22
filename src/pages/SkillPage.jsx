@@ -1,39 +1,40 @@
+import Skills from "../components/Skills";
+import { useLang } from "../context/LanguageContext";
+
 export default function SkillPage() {
+  const { t } = useLang();
+  const thumbnailUrl = `https://drive.google.com/thumbnail?id=1ZRUs_Z55RFQQEzrEiHdwjTMMh-8A4HlD`;
+
   return (
-    <div className="Skill bg-indigo-100 flex h-full items-center text-center p-20">
-      <div className="skill-left w-1/2">
-        <section id="skills" className="mb-6">
-          <ul className="flex flex-wrap gap-2 text-sm items-center justify-center">
-            <li className="bg-gray-200 px-3 py-1 rounded">HTML</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">CSS</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">PHP</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">SASS</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">React</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">JavaScript</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">Git</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">Flutter</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">Python</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">MySQL</li>
-            <li className="bg-gray-200 px-3 py-1 rounded">PostgreSQL</li>
-          </ul>
-        </section>
-        <section id="certificate">
-          <h2 className="text-xl font-semibold mb-2">Certificate</h2>
-          <div className="grid grid-cols-3 gap-3">
-            <div className="bg-white rounded-md p-1">01</div>
-            <div className="bg-white rounded-md p-1">02</div>
-            <div className="bg-white rounded-md p-1">03</div>
-            <div className="bg-white rounded-md p-1">04</div>
-            <div className="bg-white rounded-md p-1">05</div>
-            <div className="bg-white rounded-md p-1">06</div>
-            <div className="bg-white rounded-md p-1">07</div>
-            <div className="bg-white rounded-md p-1">08</div>
-            <div className="bg-white rounded-md p-1">09</div>
+    <div className="skill flex flex-col lg:flex-row h-screen lg:overflow-hidden bg-indigo-100">
+      {/* Kiri */}
+      <div className="skill-left flex flex-col lg:w-1/2 h-full p-6 text-right">
+        <h2 className="visible lg:invisible text-[5vw] font-bold text-orange-400 mb-5">
+          {t.skill}
+        </h2>
+        <Skills />
+        <section id="certificate" className="flex flex-col overflow-hidden">
+          <h2 className="text-[4vw] font-semibold mb-2">{t.certificate}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 overflow-y-auto p-2 bg-gray-200 rounded grow">
+            {Array.from({ length: 9 }).map((_, i) => (
+              <div
+                key={i}
+                className="h-auto bg-white shadow rounded flex items-center justify-center"
+              >
+                <img
+                  src={thumbnailUrl}
+                  alt="Certificate"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
           </div>
         </section>
       </div>
-      <div className="skill-right w-1/2">
-        <h2 className="text-xl md:text-3xl lg:text-5xl font-bold underline underline-offset-8 text-orange-400">Skills</h2>
+
+      {/* Kanan */}
+      <div className="skill-right hidden lg:flex w-1/2 h-full items-center justify-center p-6">
+        <h2 className="text-[4vw] font-bold text-orange-400">{t.skill}</h2>
       </div>
     </div>
   );

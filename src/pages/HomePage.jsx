@@ -12,7 +12,7 @@ export default function HomePage() {
         <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-orange-400">
           Sigit Ispramono Hadi
         </h1>
-        <h2 className="text-lg md:text-xl lg:text-3xl font-semibold mb-2">
+        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">
           Software Engineer
         </h2>
         <br></br>

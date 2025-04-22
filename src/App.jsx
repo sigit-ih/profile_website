@@ -74,7 +74,7 @@ export default function App() {
         <div className="min-h-screen">
           <div className="flex bg-pink-100 mb-0">
             <Sidebar />
-            <div className="ContentSection w-full lg:4/5 bg-blue-50 flex flex-col min-h-screen">
+            <div className="ContentSection w-full lg:w-[82%] bg-blue-50 flex flex-col min-h-screen">
               <AppRoutes />
             </div>
           </div>

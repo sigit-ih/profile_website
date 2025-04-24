@@ -71,12 +71,13 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <div className="min-h-screen">
-          <div className="flex bg-pink-100 mb-0">
-            <Sidebar />
-            <div className="ContentSection w-full lg:w-[82%] bg-blue-50 flex flex-col min-h-screen">
-              <AppRoutes />
-            </div>
+        <div className="flex w-full min-h-screen bg-pink-100 mb-0">
+          <Sidebar />
+          <div
+            id="ContentSection"
+            className="flex-grow min-w-0 bg-blue-50 flex flex-col min-h-screen"
+          >
+            <AppRoutes />
           </div>
         </div>
       </div>

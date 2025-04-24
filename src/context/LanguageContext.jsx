@@ -9,7 +9,7 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [lang, setLang] = useState("id");
 
-  const t = langs[lang]; // object semua teks (termasuk timeline array)
+  const t = langs[lang];
 
   const switchLanguage = (code) => setLang(code);
 

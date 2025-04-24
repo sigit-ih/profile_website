@@ -69,7 +69,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="mb-6 h-[30vh] lg:h-[50vh] flex items-center justify-center">
+    <section id="skills" className="mb-6 min-h-[30%] lg:min-h-[40%] flex items-center justify-center">
       {/* ada semua item di react-icons */}
       <ul className="flex flex-wrap gap-2 lg:gap-3 items-center justify-center">
         {skillsData.map((item, i) => (
@@ -77,7 +77,7 @@ export default function Skills() {
             key={i}
             className="flex flex-col md:px-1 lg:px-3 md:py-1 items-center justify-center rounded-lg"
           >
-            <item.icons className="text-[10vw] lg:text-[5vw] text-orange-500" />
+            <item.icons className="text-6xl sm:text-7xl text-orange-500" />
           </li>
         ))}
       </ul>

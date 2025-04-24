@@ -4,6 +4,8 @@ const id = {
   skill: "Keterampilan",
   certificate: "Sertifikat",
   about_desc: "Halo, Saya Sigit Ispramono Hadi, lulusan S1 Informatika di Universitas Pembangunan Nasional Veteran Jakarta tahun 2022. Saya memiliki ketertarikan dalam bidang Data Analytic dan Web Development. Saya memiliki pengalaman sebagai Database Engineer dan memiliki kemampuan bahasa Inggris, bahasa pemrograman seperti HTML, CSS, PHP, Flutter serta SQL menggunakan DBMS MySQL, Oracle Database dan PostgreSQL.",
+  feedback_success: "Disalin ke clipboard!",
+  feedback_failed: "Gagal disalin!",
   timeline: [
     {
       year: "2023 - 2024",

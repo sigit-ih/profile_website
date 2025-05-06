@@ -8,6 +8,12 @@ const id = {
   feedback_failed: "Gagal disalin!",
   timeline: [
     {
+      year: "2025",
+      title: "Tes Prediksi TOEFL",
+      subtitle: "Brighten English",
+      description: "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 623"
+    },
+    {
       year: "2023 - 2024",
       title: "Database Engineer",
       subtitle: "PT Mandiri Utama Finance",
@@ -21,9 +27,9 @@ const id = {
     },
     {
       year: "2023",
-      title: "Tes TOEFL",
+      title: "Tes Prediksi TOEFL",
       subtitle: "Brighten English",
-      description: "Mengikuti tes bahasa inggris TOEFL dengan hasil skor 603"
+      description: "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 603"
     },
     {
       year: "2023",

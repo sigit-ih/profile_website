@@ -6,10 +6,10 @@ import { IoMail } from "react-icons/io5";
 export default function CopyToClipboard({ type }) {
   const { t } = useLang();
 
-  const buttonProperties =
-    type === "email"
-      ? { text: "sigitispramono.h@gmail.com", icon: IoMail }
-      : { text: "+62895365302554", icon: FaPhoneAlt };
+  const buttonProperties = {
+    email: { text: "sigitispramono.h@gmail.com", icon: IoMail },
+    phone: { text: "+62895365302554", icon: FaPhoneAlt },
+  }[type];
 
   const [feedback, setFeedback] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
@@ -32,12 +32,15 @@ export default function CopyToClipboard({ type }) {
   }, [showFeedback]);
 
   return (
-    <div>
-      {/* Pesan feedback di tengah atas halaman dengan animasi fade */}
+    <div className="flex items-center justify-center">
+      {/* Feedback Toast */}
       <div
-        className={`absolute top-5 left-1/2 transform -translate-x-1/2 px-4 py-2 rounded bg-gray-200 text-sm text-gray-800 z-50 transition-opacity duration-500 ${
-          showFeedback ? "opacity-80" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed bottom-0 left-1/2 w-screen transform -translate-x-1/2 px-4 py-3 bg-[#4169E1] dark:bg-orange-500 text-white text-sm shadow-lg z-50 transition-all duration-500 ease-in-out
+          ${
+            showFeedback
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10 pointer-events-none"
+          }`}
       >
         {feedback}
       </div>
@@ -46,9 +49,10 @@ export default function CopyToClipboard({ type }) {
       <button
         type="button"
         onClick={handleCopy}
-        className="w-auto font-medium rounded-full text-center justify-items-center p-3 bg-orange-700 hover:bg-orange-800"
+        className="flex size-[9vw] sm:size-14 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600"
+        aria-label={`Copy ${type}`}
       >
-        <buttonProperties.icon className="text-3xl sm:text-4xl text-white" />
+        <buttonProperties.icon className="text-[5vw] sm:text-3xl text-white" />
       </button>
     </div>
   );

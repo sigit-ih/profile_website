@@ -2,11 +2,17 @@ const en = {
   home: "Home",
   about: "About Me",
   skill: "Skills",
-  certificate: "Certificate",
+  certificate: "Certificates",
   about_desc: "Hello, I am Sigit Ispramono Hadi, an Informatics Engineering graduate of Universitas Pembangunan Nasional Jakarta in 2022. I have an interest in Data Analytic and Web Development. I have experience as Database Engineer and a good knowledge in English, programming languages such as HTML, CSS, PHP, Flutter and SQL using DBMS MySQL, Oracle Database and PostgreSQL.",
   feedback_success: "Copied to clipboard!",
   feedback_failed: "Failed to copy!",
   timeline: [
+    {
+      year: "2025",
+      title: "TOEFL Prediction Test",
+      subtitle: "Brighten English",
+      description: "Took the TOEFL English prediction test with a score of 623"
+    },
     {
       year: "2023 - 2024",
       title: "Database Engineer",
@@ -21,9 +27,9 @@ const en = {
     },
     {
       year: "2023",
-      title: "TOEFL Test",
+      title: "TOEFL Prediction Test",
       subtitle: "Brighten English",
-      description: "Took the TOEFL English test with a score of 603"
+      description: "Took the TOEFL English prediction test with a score of 603"
     },
     {
       year: "2023",

@@ -1,12 +1,12 @@
 export default function Timeline({ data }) {
   return (
-    <div className="timeline-wrapper h-full p-4 lg:px-0 mx-auto">
+    <div className="timeline-wrapper h-full p-2 sm:p-4 lg:px-0 mx-auto">
       {/* Mobile: vertical */}
       <div className="timeline-vertical lg:hidden h-full overflow-y-auto scroll-smooth p-2">
         <div className="vertical-content space-y-5 sm:space-y-10 border-l-4 pl-5 border-blue-200 dark:border-orange-200 ">
           {data.map((item, i) => (
             <div key={i} className="relative">
-              <div className="absolute -left-8 top-1 w-5 h-5 bg-white dark:bg-gray-900 border-4 border-blue-200 dark:border-orange-200 z-10"></div>
+              <div className="absolute -left-8 top-1 w-5 h-5 rounded bg-white dark:bg-gray-900 border-4 border-blue-200 dark:border-orange-200 z-10"></div>
               <h3 dir="ltr" className="text-md sm:text-lg text-[#4169E1] dark:text-orange-400 font-semibold">
                 {item.year}
               </h3>
@@ -30,7 +30,7 @@ export default function Timeline({ data }) {
               key={i}
               className="flex-shrink-0 flex flex-col items-center w-64"
             >
-              <div className="w-5 h-5 bg-white dark:bg-gray-900 border-4 border-blue-200 dark:border-orange-200 z-10"></div>
+              <div className="w-5 h-5 rounded bg-white dark:bg-gray-900 border-4 border-blue-200 dark:border-orange-200 z-10"></div>
               <div className="p-2 text-center w-full">
                 <h3 dir="ltr" className="text-[#4169E1] dark:text-orange-400 font-semibold text-sm sm:text-md">
                   {item.year}

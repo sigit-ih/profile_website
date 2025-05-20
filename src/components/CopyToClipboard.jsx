@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useLang } from "../context/LanguageContext";
+import { useTranslation } from "react-i18next";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
 export default function CopyToClipboard({ type }) {
-  const { t } = useLang();
+  const { t } = useTranslation();
 
   const buttonProperties = {
     email: { text: "sigitispramono.h@gmail.com", icon: IoMail },
@@ -17,9 +17,9 @@ export default function CopyToClipboard({ type }) {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(buttonProperties.text);
-      setFeedback(t.feedback_success);
+      setFeedback(t("feedback_success"));
     } catch (err) {
-      setFeedback(t.feedback_failed);
+      setFeedback(t("feedback_failed"));
     }
     setShowFeedback(true);
   };
@@ -52,7 +52,7 @@ export default function CopyToClipboard({ type }) {
         className="flex size-[9vw] sm:size-14 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600"
         aria-label={`Copy ${type}`}
       >
-        <buttonProperties.icon className="text-[5vw] sm:text-3xl text-white" />
+        <buttonProperties.icon className="text-[5vw] sm:text-3xl text-white dark:text-gray-900" />
       </button>
     </div>
   );

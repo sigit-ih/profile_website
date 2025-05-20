@@ -68,7 +68,7 @@ export default function Skills() {
         {skillsData.map((item, i) => (
           <li
             key={i}
-            className="flex flex-col md:px-1 lg:px-3 md:py-1 items-center justify-center rounded-lg hover:bg-[#003153] dark:hover:bg-orange-600 hover:shadow-lg"
+            className="flex flex-col md:px-1 lg:px-3 md:py-1 items-center justify-center rounded-lg hover:bg-[#003153] dark:hover:bg-orange-700 hover:shadow-lg"
           >
             <item.icon className="text-[12vw] p-[1vw] sm:p-2 sm:text-7xl text-[#4169E1] dark:text-orange-400" title={item.title}/>
           </li>

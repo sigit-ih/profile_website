@@ -1,55 +1,112 @@
 const id = {
-  home: "Beranda",
-  about: "Tentang Saya",
-  skill: "Keterampilan",
-  certificate: "Sertifikat",
-  about_desc: "Halo, Saya Sigit Ispramono Hadi, lulusan S1 Informatika di Universitas Pembangunan Nasional Veteran Jakarta tahun 2022. Saya memiliki ketertarikan dalam bidang Data Analytic dan Web Development. Saya memiliki pengalaman sebagai Database Engineer dan memiliki kemampuan bahasa Inggris, bahasa pemrograman seperti HTML, CSS, PHP, Flutter serta SQL menggunakan DBMS MySQL, Oracle Database dan PostgreSQL.",
-  feedback_success: "Disalin ke clipboard!",
-  feedback_failed: "Gagal disalin!",
-  timeline: [
-    {
-      year: "2025",
-      title: "Tes Prediksi TOEFL",
-      subtitle: "Brighten English",
-      description: "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 623"
-    },
-    {
-      year: "2023 - 2024",
-      title: "Database Engineer",
-      subtitle: "PT Mandiri Utama Finance",
-      description: "Melakukan koreksi data nasabah, objek dan transaksi pada database menggunakan Oracle dan PostgreSQL"
-    },
-    {
-      year: "2023 - 2023",
-      title: "Bootcamp .NET Developer",
-      subtitle: "XSIS Academy",
-      description: "Mempelajari .NET dan pembuatan proyek akhir website rumah sakit dengan C# dan Microsoft SQL Server"
-    },
-    {
-      year: "2023",
-      title: "Tes Prediksi TOEFL",
-      subtitle: "Brighten English",
-      description: "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 603"
-    },
-    {
-      year: "2023",
-      title: "Pelatihan Intro to Front-end Development",
-      subtitle: "Digitalent dan Progate",
-      description: "Mempelajari Frontend Development dengan HTML, CSS, Javascript, SASS, dan React"
-    },
-    {
-      year: "2022",
-      title: "Pelatihan Analitik Data Google",
-      subtitle: "Digitalent dan Google",
-      description: "Mempelajari Data Analisis dengan Python, R dan Tableau"
-    },
-    {
-      year: "2015 - 2022",
-      title: "S1 Informatika",
-      subtitle: "Universitas Pembangunan Nasional Veteran Jakarta",
-      description: "IPK 3.71 dari 4.00"
-    }
-  ]
-}
+  translation: {
+    home: "Beranda",
+    about: "Tentang Saya",
+    skill: "Keterampilan",
+    certificate: "Sertifikat",
+    project: "Proyek Github",
+    about_desc:
+      "Halo, Saya Sigit Ispramono Hadi. Saya adalah seorang developer dengan fokus pada pengembangan antarmuka web menggunakan React, Tailwind, dan JavaScript. Saya senang membangun website yang rapi, user-friendly, dan fungsional. Saya memiliki ketertarikan besar di bidang Web Development dan Artificial Intelligence. Saya percaya bahwa teknologi terus berkembang, karena itu saya berkomitmen untuk terus belajar dan mengasah kemampuan saya. Saya aktif mengikuti berbagai webinar, pelatihan, dan eksplorasi mandiri untuk memperdalam pemahaman saya baik dalam pengembangan web maupun pemanfaatan data dan AI. Bagi saya, setiap proyek adalah kesempatan untuk tumbuh dan belajar hal baru.",
+    feedback_success: "Disalin ke clipboard!",
+    feedback_failed: "Gagal disalin!",
+    timeline: [
+      {
+        year: "2025",
+        title: "Tes Prediksi TOEFL",
+        subtitle: "Brighten English",
+        description:
+          "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 623",
+      },
+      {
+        year: "2023 - 2024",
+        title: "Database Engineer",
+        subtitle: "PT Mandiri Utama Finance",
+        description:
+          "Melakukan koreksi data nasabah, objek dan transaksi pada database menggunakan Oracle dan PostgreSQL",
+      },
+      {
+        year: "2023 - 2023",
+        title: "Bootcamp .NET Developer",
+        subtitle: "XSIS Academy",
+        description:
+          "Mempelajari .NET dan pembuatan proyek akhir website rumah sakit dengan C# dan Microsoft SQL Server",
+      },
+      {
+        year: "2023",
+        title: "Tes Prediksi TOEFL",
+        subtitle: "Brighten English",
+        description:
+          "Mengikuti tes prediksi bahasa inggris TOEFL dengan hasil skor 603",
+      },
+      {
+        year: "2023",
+        title: "Pelatihan Intro to Front-end Development",
+        subtitle: "Digitalent dan Progate",
+        description:
+          "Mempelajari Frontend Development dengan HTML, CSS, Javascript, SASS, dan React",
+      },
+      {
+        year: "2022",
+        title: "Pelatihan Analitik Data Google",
+        subtitle: "Digitalent dan Google",
+        description: "Mempelajari Data Analisis dengan Python, R dan Tableau",
+      },
+      {
+        year: "2015 - 2022",
+        title: "S1 Informatika",
+        subtitle: "Universitas Pembangunan Nasional Veteran Jakarta",
+        description: "IPK 3.71 dari 4.00",
+      },
+      {
+        year: "2011 - 2015",
+        title: "Teknik Komputer Jaringan",
+        subtitle: "SMK Negeri 26 Jakarta Timur",
+        description: "",
+      },
+    ],
+    project_lists: [
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "",
+        github: "",
+      },
+      {
+        title: "Website Portofolio Pribadi 2",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "",
+        github: "",
+      },
+      {
+        title: "Website Portofolio Pribadi 3",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "",
+        github: "",
+      },
+      {
+        title: "Website Portofolio Pribadi 4",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "",
+        github: "",
+      },
+      {
+        title: "Website Portofolio Pribadi 5",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "",
+        github: "",
+      },
+    ],
+  },
+};
 
 export default id;

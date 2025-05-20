@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './assets/styles/index.css';
-import App from './App';
-import { LanguageProvider } from "./context/LanguageContext";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./assets/styles/index.css";
+import App from "./App";
+import "./i18n";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <LanguageProvider>
-      <App />
-    </LanguageProvider>
+    <App />
   </React.StrictMode>
 );

@@ -6,12 +6,28 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Sigit Ispramono Hadi" />
     <meta
-      name="profile website"
+      name="keywords"
+      content="React, Tailwind, AI, Developer, Portofolio, Web"
+    />
+    <meta
+      name="description"
       content="Profile website created by Sigit Ispramono Hadi"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script>
+      try {
+        const darkMode = localStorage.getItem("dark-mode");
+        const isDark = darkMode === null ? true : darkMode === "true";
+        isDark
+          ? document.documentElement.classList.add("dark")
+          : document.documentElement.classList.remove("dark");
+      } catch (e) {
+        console.error("Dark mode detection failed", e);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

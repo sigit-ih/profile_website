@@ -1,6 +1,7 @@
 // Certificates.jsx
 import { useState, useRef, useEffect } from "react";
-import { useLang } from "../context/LanguageContext";
+import { useTranslation } from "react-i18next";
+import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 // Auto import semua .webp di folder
 const importAll = (r) =>
@@ -14,7 +15,7 @@ const certificates = importAll(
 );
 
 export default function Certificates() {
-  const { t } = useLang();
+  const { t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(null);
   const modalRef = useRef();
 
@@ -58,7 +59,7 @@ export default function Certificates() {
   return (
     <section className="certificates flex flex-col h-[50vh] lg:h-auto overflow-hidden">
       <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 font-semibold mb-2">
-        {t.certificate}
+        {t("certificate")}
       </h2>
 
       {/* Grid Thumbnail */}
@@ -97,7 +98,7 @@ export default function Certificates() {
             aria-label="Close modal"
             className="absolute top-4 right-6 text-3xl text-white hover:text-gray-300"
           >
-            ×
+            <FiX />
           </button>
 
           {/* Prev Button */}
@@ -106,7 +107,7 @@ export default function Certificates() {
             aria-label="Previous certificate"
             className="absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
           >
-            ←
+            <FiChevronLeft />
           </button>
 
           {/* Certificate Content */}
@@ -124,7 +125,7 @@ export default function Certificates() {
             aria-label="Next certificate"
             className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
           >
-            →
+            <FiChevronRight />
           </button>
         </div>
       )}

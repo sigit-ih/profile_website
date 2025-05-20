@@ -12,15 +12,16 @@ import CopyToClipboard from "../components/CopyToClipboard";
 
 export default function HomePage() {
   return (
-    <div className="home-page relative flex flex-col md:flex-row h-screen lg:h-full bg-white dark:bg-gray-900 p-[4vw] pt-[50px] lg:pt-0 items-center overflow-hidden">
+    <div className="home-page relative flex flex-col md:flex-row h-screen lg:h-full bg-white dark:bg-gray-900 p-[4vw] pt-[60px] lg:pt-0 items-center overflow-hidden">
       <div className="home-top w-full md:w-0 h-auto flex items-center justify-center visible md:invisible mt-14 md:mt-0">
         <img
           src={ProfileImage}
           alt="Profile"
           className="w-[40vw] h-[40vw] sm:size-60 object-cover object-[center_30%] rounded-full"
+          loading="lazy"
         />
       </div>
-      <div className="home-left w-full md:w-1/2 md:min-w-min pt-[1vw] sm:pt-6 md:pr-[4.5vw] md:border-r-2 md:border-black md:text-right">
+      <div className="home-left w-full md:w-1/2 md:min-w-min pt-[1vw] sm:pt-10 md:pr-[4.5vw] md:py-10 md:border-r-4 md:border-gray-200 dark:md:border-gray-800 md:text-right">
         <h1 className="text-[6vw] sm:text-5xl md:text-4xl font-bold text-[#4169E1] dark:text-orange-400">
           Sigit Ispramono Hadi
         </h1>
@@ -83,7 +84,7 @@ export default function HomePage() {
               aria-label="LinkedIn"
               className="flex size-[9vw] sm:size-14 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600"
             >
-              <FaLinkedinIn className="text-[5vw] sm:text-3xl text-white" />
+              <FaLinkedinIn className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
             </a>
           </div>
           {/* GitHub Button as <a> styled */}
@@ -95,7 +96,7 @@ export default function HomePage() {
               aria-label="GitHub"
               className="flex size-[9vw] sm:size-14 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600"
             >
-              <TbBrandGithubFilled className="text-[5vw] sm:text-3xl text-white" />
+              <TbBrandGithubFilled className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
             </a>
           </div>
         </div>
@@ -103,11 +104,11 @@ export default function HomePage() {
           href="https://drive.google.com/file/d/1ZRUs_Z55RFQQEzrEiHdwjTMMh-8A4HlD/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 w-full sm:w-auto rounded-lg font-medium text-[3vw] sm:text-lg md:text-md sm:px-16 md:px-6 py-[2vw] sm:py-3 text-white bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600 text-center justify-center"
+          className="inline-flex items-center gap-2 w-full sm:w-auto rounded-lg font-medium text-[3vw] sm:text-lg md:text-md sm:px-16 md:px-6 py-[2vw] sm:py-3 bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600 text-white dark:text-gray-800 text-center justify-center"
           aria-label="Preview CV"
         >
           Preview CV
-          <FaFileAlt className="text-white" />
+          <FaFileAlt className="text-white dark:text-gray-800" />
         </a>
       </div>
 

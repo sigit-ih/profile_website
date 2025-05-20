@@ -5,8 +5,12 @@ function DarkModeToggle() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Cek localStorage saat pertama kali
-    const darkMode = localStorage.getItem("dark-mode") === "true";
+    const stored = localStorage.getItem("dark-mode");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    const darkMode = stored === null ? prefersDark : stored === "true";
+
     setIsDark(darkMode);
     if (darkMode) {
       document.documentElement.classList.add("dark");

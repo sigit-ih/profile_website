@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f792662.css",
+    "main.js": "/static/js/main.c2d23c38.js",
+    "static/media/profile.png": "/static/media/profile.eb91d37d26f316d78abd.png",
+    "static/media/logo.png": "/static/media/logo.b5a8f092c5330bd63328.png",
+    "static/media/TOEFL 2025.webp": "/static/media/TOEFL 2025.11e38966d540bbf64852.webp",
+    "static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.webp": "/static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.59b60887b92d0b880174.webp",
+    "static/media/Analitik Data Google Certificate.webp": "/static/media/Analitik Data Google Certificate.8243efc8f3a4a367b003.webp",
+    "static/media/TOEFL 2023.webp": "/static/media/TOEFL 2023.7c74a784f6cf0a512585.webp",
+    "static/media/Course 2 Certificate.webp": "/static/media/Course 2 Certificate.adf25ae842220285681d.webp",
+    "static/media/Course 8 Certificate.webp": "/static/media/Course 8 Certificate.de30b7d5c0e2bb0f4ccc.webp",
+    "static/media/Course 5 Certificate.webp": "/static/media/Course 5 Certificate.4d52a8a690e58233e370.webp",
+    "static/media/Course 1 Certificate.webp": "/static/media/Course 1 Certificate.93fa763e34fa515decbf.webp",
+    "static/media/Course 3 Certificate.webp": "/static/media/Course 3 Certificate.af07ea2dfa9a4a5117dc.webp",
+    "static/media/Course 6 Certificate.webp": "/static/media/Course 6 Certificate.cb6633ce30c93feedac5.webp",
+    "static/media/Course 7 Certificate.webp": "/static/media/Course 7 Certificate.a4f4f5fcb1c7954888e2.webp",
+    "static/media/Course 4 Certificate.webp": "/static/media/Course 4 Certificate.61cf51889f6150fd6d8f.webp",
+    "static/media/Sertifikat Webinar Habiskerja 22 April 2025.webp": "/static/media/Sertifikat Webinar Habiskerja 22 April 2025.e4829703096a67eed17c.webp",
+    "static/media/Sertifikat_SIGIT ISPRAMONO HADI_Intro to Front-end Development.webp": "/static/media/Sertifikat_SIGIT ISPRAMONO HADI_Intro to Front-end Development.12ce911c4e44cb435193.webp",
+    "static/media/Sertifikat Public Speaking.webp": "/static/media/Sertifikat Public Speaking.354dd6fde18fe67f1e60.webp",
+    "static/media/E-Certificate Backend 101 2022 - Sigit Ispramono Hadi.webp": "/static/media/E-Certificate Backend 101 2022 - Sigit Ispramono Hadi.88475bab016d17086ce5.webp",
+    "static/media/Sertifikat JavaScript.webp": "/static/media/Sertifikat JavaScript.22ed12836adf3d7dda69.webp",
+    "static/media/Sertifikat React.webp": "/static/media/Sertifikat React.7b9164e87f455250ce19.webp",
+    "static/media/Sertifikat Python.webp": "/static/media/Sertifikat Python.a254fe29db7d5e5e5cfc.webp",
+    "static/media/Sertifikat HTML CSS.webp": "/static/media/Sertifikat HTML CSS.babb5029b4ab8567044e.webp",
+    "static/media/Sertifikat Command Line.webp": "/static/media/Sertifikat Command Line.28268f4157e40452cdf7.webp",
+    "static/media/Sertifikat SASS.webp": "/static/media/Sertifikat SASS.e8b35d2c794395462618.webp",
+    "static/media/Sertifikat Git.webp": "/static/media/Sertifikat Git.2ef7958a24f9c6858067.webp",
+    "static/media/IBM_Certificate_of_Completion.webp": "/static/media/IBM_Certificate_of_Completion.28af4ae7584f9e0320c5.webp",
+    "index.html": "/index.html",
+    "main.3f792662.css.map": "/static/css/main.3f792662.css.map",
+    "main.c2d23c38.js.map": "/static/js/main.c2d23c38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f792662.css",
+    "static/js/main.c2d23c38.js"
+  ]
+}

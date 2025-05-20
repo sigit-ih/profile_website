@@ -14,20 +14,6 @@ import SkillPage from "./pages/SkillPage";
 import ProjectPage from "./pages/ProjectPage";
 import Navbar from "./components/Navbar";
 import PageWrapper from "./components/PageWrapper";
-// Warna Light Mode
-// Fungsi      | Nama Warna      | Kode Hex  | Catatan
-// Teks utama  | Prussian Blue   | #003153   | Biru tua klasik, tegas tapi tidak terlalu gelap
-// Heading     | Navy Blue       | #000080   | Biru navy yang kuat dan elegan
-// Aksen teks  | Royal Blue      | #4169E1   | Biru agak cerah untuk menonjolkan bagian tertentu
-// Warna Dark Mode
-// Fungsi      | Nama Warna      | Kode Hex  | Catatan
-// Teks utama  | Vivid Orange    | #FF6F00   | Oranye menyala yang tetap enak dilihat di dark mode
-// Heading     | Tangerine       | #FF9500   | Oranye yang sedikit lebih soft untuk judul
-// Aksen teks  | Burnt Orange    | #CC5500   | Lebih gelap, cocok untuk penekanan
-// Warna Gabungan
-// #0DA900 : Warna gabungan dari teks utama
-// #D40058 : Warna gabungan dari heading
-// #D92687 : Warna gabungan dari aksen teks
 
 function AppRoutes() {
   const location = useLocation();
@@ -97,7 +83,7 @@ export default function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/profile_website">
       <div className="text-center text-[#003153] dark:text-gray-300 bg-white dark:bg-gray-900">
         <div className="relative flex flex-col lg:flex-row w-full h-auto max-h-screen mb-0">
           <Navbar />

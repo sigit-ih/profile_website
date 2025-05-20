@@ -9,7 +9,7 @@ const importAll = (r) =>
   }));
 
 const certificates = importAll(
-  require.context("../assets/images/certificates", false, /\.webp$/)
+  require.context("../assets/images/certs", false, /\.webp$/)
 );
 
 export default function Certificates() {

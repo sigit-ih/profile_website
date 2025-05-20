@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile_website/static/css/main.3f792662.css",
-    "main.js": "/profile_website/static/js/main.3ea467a4.js",
+    "main.js": "/profile_website/static/js/main.a579746a.js",
     "static/media/profile.png": "/profile_website/static/media/profile.eb91d37d26f316d78abd.png",
     "static/media/logo.png": "/profile_website/static/media/logo.b5a8f092c5330bd63328.png",
     "static/media/TOEFL 2025.webp": "/profile_website/static/media/TOEFL 2025.11e38966d540bbf64852.webp",
@@ -30,10 +30,10 @@
     "static/media/IBM_Certificate_of_Completion.webp": "/profile_website/static/media/IBM_Certificate_of_Completion.28af4ae7584f9e0320c5.webp",
     "index.html": "/profile_website/index.html",
     "main.3f792662.css.map": "/profile_website/static/css/main.3f792662.css.map",
-    "main.3ea467a4.js.map": "/profile_website/static/js/main.3ea467a4.js.map"
+    "main.a579746a.js.map": "/profile_website/static/js/main.a579746a.js.map"
   },
   "entrypoints": [
     "static/css/main.3f792662.css",
-    "static/js/main.3ea467a4.js"
+    "static/js/main.a579746a.js"
   ]
 }

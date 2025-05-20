@@ -1,9 +1,7 @@
-// Certificates.jsx
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-// Auto import semua .webp di folder
 const importAll = (r) =>
   r.keys().map((key, index) => ({
     id: index + 1,

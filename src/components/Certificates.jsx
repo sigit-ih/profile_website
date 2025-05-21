@@ -103,7 +103,7 @@ export default function Certificates() {
           <button
             onClick={handlePrev}
             aria-label="Previous certificate"
-            className="absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
+            className="absolute left-1 md:left-4 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
           >
             <FiChevronLeft />
           </button>
@@ -121,7 +121,7 @@ export default function Certificates() {
           <button
             onClick={handleNext}
             aria-label="Next certificate"
-            className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
+            className="absolute right-1 md:right-4 top-1/2 transform -translate-y-1/2 text-3xl text-white hover:text-gray-300 p-2"
           >
             <FiChevronRight />
           </button>

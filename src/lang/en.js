@@ -70,40 +70,8 @@ const en = {
         description:
           "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
         technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Personal Portfolio Website 2",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Personal Portfolio Website 3",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Personal Portfolio Website 4",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Personal Portfolio Website 5",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
+        link: "https://sigit-ih.github.io/profile_website",
+        github: "https://github.com/sigit-ih/profile_website",
       },
     ],
   },

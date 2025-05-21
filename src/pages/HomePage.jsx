@@ -7,13 +7,13 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import ProfileImage from "../assets/images/profile.png";
+import ProfileImage from "../assets/images/profile.webp";
 import CopyToClipboard from "../components/CopyToClipboard";
 
 export default function HomePage() {
   return (
     <div className="home-page relative flex flex-col md:flex-row h-screen lg:h-full bg-white dark:bg-gray-900 p-[4vw] pt-[60px] lg:pt-0 items-center overflow-hidden">
-      <div className="home-top w-full md:w-0 h-auto flex items-center justify-center visible md:invisible mt-14 md:mt-0">
+      <div className="home-top w-full md:w-0 h-auto flex items-center justify-center visible md:invisible mt-16 md:mt-0">
         <img
           src={ProfileImage}
           alt="Profile"
@@ -45,7 +45,7 @@ export default function HomePage() {
             <h4 className="flex justify-end items-center gap-2">
               <a
                 href="https://www.linkedin.com/in/sigitispramonohadi/"
-                className="underline lg:no-underline hover:underline"
+                className="underline hover:text-[#4169E1] dark:hover:text-orange-400"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -58,7 +58,7 @@ export default function HomePage() {
             <h4 className="flex justify-end items-center gap-2">
               <a
                 href="https://github.com/sigit-ih"
-                className="underline lg:no-underline hover:underline"
+                className="underline hover:text-[#4169E1] dark:hover:text-orange-400"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -69,13 +69,9 @@ export default function HomePage() {
           </li>
         </ul>
 
-        {/* Grid tombol kontak di mobile */}
         <div className="grid md:hidden grid-cols-4 w-fit min-w-[50vw] sm:min-w-80 gap-1 sm:gap-3 mx-auto mb-[4vw]">
-          {/* Email Copy Button */}
           <CopyToClipboard type="email" />
-          {/* Phone Copy Button */}
           <CopyToClipboard type="phone" />
-          {/* LinkedIn Button as <a> styled */}
           <div className="flex items-center justify-center">
             <a
               href="https://www.linkedin.com/in/sigitispramonohadi/"
@@ -87,7 +83,6 @@ export default function HomePage() {
               <FaLinkedinIn className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
             </a>
           </div>
-          {/* GitHub Button as <a> styled */}
           <div className="flex items-center justify-center">
             <a
               href="https://github.com/sigit-ih"

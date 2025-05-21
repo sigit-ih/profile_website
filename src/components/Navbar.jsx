@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DarkModeToggle from "../context/DarkModeToggle";
 import { useTranslation } from "react-i18next";
-import LogoImage from "../assets/images/logo.png";
+import LogoImage from "../assets/images/logo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col flex-shrink-0 w-full lg:w-64 lg:min-w-64 h-20 lg:min-h-screen z-20 border-b-4 lg:border-b-0 border-r-0 lg:border-r-4 border-gray-200 dark:border-gray-800 px-6 lg:px-0 bg-white dark:bg-gray-900">
+    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col flex-shrink-0 w-full lg:w-64 lg:min-w-64 h-20 lg:min-h-screen z-20 border-b-4 lg:border-b-0 border-r-0 lg:border-r-4 border-[#4169E1] dark:border-orange-500 lg:border-gray-200 dark:lg:border-gray-800 px-6 lg:px-0 bg-white dark:bg-gray-900">
       <div className="navbar-header flex lg:flex-col lg:h-auto gap-3 lg:gap-0 p-3 lg:p-4 items-center justify-center">
         <Link to="/">
           <img

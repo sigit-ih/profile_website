@@ -70,40 +70,8 @@ const id = {
         description:
           "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
         technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Website Portofolio Pribadi 2",
-        description:
-          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Website Portofolio Pribadi 3",
-        description:
-          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Website Portofolio Pribadi 4",
-        description:
-          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
-      },
-      {
-        title: "Website Portofolio Pribadi 5",
-        description:
-          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "",
-        github: "",
+        link: "https://sigit-ih.github.io/profile_website",
+        github: "https://github.com/sigit-ih/profile_website",
       },
     ],
   },

@@ -74,8 +74,8 @@ export default function App() {
           Now Loading
           <span className="flex ml-2 space-x-1">
             <span className="animate-bounce [animation-delay:0s]">.</span>
-            <span className="animate-bounce [animation-delay:0.1s]">.</span>
-            <span className="animate-bounce [animation-delay:0.2s]">.</span>
+            <span className="animate-bounce [animation-delay:0.15s]">.</span>
+            <span className="animate-bounce [animation-delay:0.3s]">.</span>
           </span>
         </span>
       </div>

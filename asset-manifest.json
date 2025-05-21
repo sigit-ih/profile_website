@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/profile_website/static/css/main.6ad6abc7.css",
-    "main.js": "/profile_website/static/js/main.905fe6cf.js",
-    "static/media/profile.png": "/profile_website/static/media/profile.eb91d37d26f316d78abd.png",
-    "static/media/logo.png": "/profile_website/static/media/logo.b5a8f092c5330bd63328.png",
+    "main.css": "/profile_website/static/css/main.920ec9d7.css",
+    "main.js": "/profile_website/static/js/main.89a4da57.js",
+    "static/media/profile.webp": "/profile_website/static/media/profile.9abc2ef1c9d34c2d373b.webp",
     "static/media/TOEFL 2025.webp": "/profile_website/static/media/TOEFL 2025.11e38966d540bbf64852.webp",
     "static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.webp": "/profile_website/static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.59b60887b92d0b880174.webp",
     "static/media/Analitik Data Google Certificate.webp": "/profile_website/static/media/Analitik Data Google Certificate.8243efc8f3a4a367b003.webp",
@@ -28,12 +27,13 @@
     "static/media/Sertifikat SASS.webp": "/profile_website/static/media/Sertifikat SASS.e8b35d2c794395462618.webp",
     "static/media/Sertifikat Git.webp": "/profile_website/static/media/Sertifikat Git.2ef7958a24f9c6858067.webp",
     "static/media/IBM_Certificate_of_Completion.webp": "/profile_website/static/media/IBM_Certificate_of_Completion.28af4ae7584f9e0320c5.webp",
+    "static/media/logo.webp": "/profile_website/static/media/logo.136e5e3bc28d496706f2.webp",
     "index.html": "/profile_website/index.html",
-    "main.6ad6abc7.css.map": "/profile_website/static/css/main.6ad6abc7.css.map",
-    "main.905fe6cf.js.map": "/profile_website/static/js/main.905fe6cf.js.map"
+    "main.920ec9d7.css.map": "/profile_website/static/css/main.920ec9d7.css.map",
+    "main.89a4da57.js.map": "/profile_website/static/js/main.89a4da57.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ad6abc7.css",
-    "static/js/main.905fe6cf.js"
+    "static/css/main.920ec9d7.css",
+    "static/js/main.89a4da57.js"
   ]
 }

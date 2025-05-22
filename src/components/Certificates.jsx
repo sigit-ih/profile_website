@@ -44,13 +44,24 @@ export default function Certificates() {
   };
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") handleCloseModal();
+      if (e.key === "ArrowLeft")
+        setSelectedIndex(
+          (prev) => (prev - 1 + certificates.length) % certificates.length
+        );
+      if (e.key === "ArrowRight")
+        setSelectedIndex((prev) => (prev + 1) % certificates.length);
+    };
+
     if (selectedIndex !== null) {
       document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
+      document.addEventListener("keydown", handleKeyDown);
     }
+
     return () => {
       document.body.style.overflow = "auto";
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, [selectedIndex]);
 
@@ -82,6 +93,8 @@ export default function Certificates() {
       {selectedIndex !== null && (
         <div
           ref={modalRef}
+          role="dialog"
+          aria-modal="true"
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 transition-opacity duration-300"
           onClick={handleModalClick}
         >
@@ -110,11 +123,13 @@ export default function Certificates() {
 
           {/* Certificate Content */}
           <div className="w-9/12 sm:w-5/6 h-[95%] bg-transparent rounded shadow overflow-hidden flex justify-center items-center p-2">
-            <img
-              src={certificates[selectedIndex].imageUrl}
-              alt={`Certificate ${certificates[selectedIndex].id}`}
-              className="w-full h-full object-contain"
-            />
+            {certificates[selectedIndex] && (
+              <img
+                src={certificates[selectedIndex].imageUrl}
+                alt={`Certificate ${certificates[selectedIndex].id}`}
+                className="w-full h-full object-contain"
+              />
+            )}
           </div>
 
           {/* Next Button */}

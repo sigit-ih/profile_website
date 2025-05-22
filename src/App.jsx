@@ -83,7 +83,7 @@ export default function App() {
   }
 
   return (
-    <Router basename="/profile_website">
+    <Router>
       <div className="text-center text-[#003153] dark:text-gray-300 bg-white dark:bg-gray-900">
         <div className="relative flex flex-col lg:flex-row w-full h-auto max-h-screen mb-0">
           <Navbar />

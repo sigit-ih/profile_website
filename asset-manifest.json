@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/profile_website/static/css/main.920ec9d7.css",
-    "main.js": "/profile_website/static/js/main.89a4da57.js",
+    "main.css": "/profile_website/static/css/main.810e011b.css",
+    "main.js": "/profile_website/static/js/main.2c573944.js",
+    "static/media/Sertifikat IG Organik Habiskerja.webp": "/profile_website/static/media/Sertifikat IG Organik Habiskerja.b3c220f4df8e34847e15.webp",
+    "static/media/Sertifikat Excel AI Habiskerja_page.webp": "/profile_website/static/media/Sertifikat Excel AI Habiskerja_page.1f7c5f1a252a3e76c0a1.webp",
     "static/media/profile.webp": "/profile_website/static/media/profile.9abc2ef1c9d34c2d373b.webp",
+    "static/media/Sertifikat Portofolio Sinau.webp": "/profile_website/static/media/Sertifikat Portofolio Sinau.036728efd6a3217bfe0a.webp",
     "static/media/TOEFL 2025.webp": "/profile_website/static/media/TOEFL 2025.11e38966d540bbf64852.webp",
     "static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.webp": "/profile_website/static/media/Sigit Ispramono Hadi-Sertifikat Design Thinking dalam UI_UX Design_.59b60887b92d0b880174.webp",
+    "static/media/Sertifikat NET Bootcamp XSIS Academy.webp": "/profile_website/static/media/Sertifikat NET Bootcamp XSIS Academy.5c705298b969763fe3c5.webp",
     "static/media/Analitik Data Google Certificate.webp": "/profile_website/static/media/Analitik Data Google Certificate.8243efc8f3a4a367b003.webp",
+    "static/media/Sertifikat Bisnis AI Digides.webp": "/profile_website/static/media/Sertifikat Bisnis AI Digides.d0237930b98ff6f2d603.webp",
     "static/media/TOEFL 2023.webp": "/profile_website/static/media/TOEFL 2023.7c74a784f6cf0a512585.webp",
     "static/media/Course 2 Certificate.webp": "/profile_website/static/media/Course 2 Certificate.adf25ae842220285681d.webp",
     "static/media/Course 8 Certificate.webp": "/profile_website/static/media/Course 8 Certificate.de30b7d5c0e2bb0f4ccc.webp",
@@ -29,11 +34,11 @@
     "static/media/IBM_Certificate_of_Completion.webp": "/profile_website/static/media/IBM_Certificate_of_Completion.28af4ae7584f9e0320c5.webp",
     "static/media/logo.webp": "/profile_website/static/media/logo.136e5e3bc28d496706f2.webp",
     "index.html": "/profile_website/index.html",
-    "main.920ec9d7.css.map": "/profile_website/static/css/main.920ec9d7.css.map",
-    "main.89a4da57.js.map": "/profile_website/static/js/main.89a4da57.js.map"
+    "main.810e011b.css.map": "/profile_website/static/css/main.810e011b.css.map",
+    "main.2c573944.js.map": "/profile_website/static/js/main.2c573944.js.map"
   },
   "entrypoints": [
-    "static/css/main.920ec9d7.css",
-    "static/js/main.89a4da57.js"
+    "static/css/main.810e011b.css",
+    "static/js/main.2c573944.js"
   ]
 }

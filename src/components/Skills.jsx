@@ -63,7 +63,6 @@ const skillsData = [
 export default function Skills() {
   return (
     <section className="skills mb-6 min-h-[30%] lg:min-h-[40%] flex items-center justify-center">
-      {/* ada semua item di react-icons */}
       <ul className="flex flex-wrap gap-4 md:gap-3 items-center justify-center">
         {skillsData.map((item, i) => (
           <li

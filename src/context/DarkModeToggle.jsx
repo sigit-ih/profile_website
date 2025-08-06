@@ -12,22 +12,18 @@ function DarkModeToggle() {
     const darkMode = stored === null ? prefersDark : stored === "true";
 
     setIsDark(darkMode);
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    darkMode
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
   }, []);
 
   const toggleDarkMode = () => {
     const newMode = !isDark;
     setIsDark(newMode);
     localStorage.setItem("dark-mode", newMode);
-    if (newMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    newMode
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
   };
 
   return (

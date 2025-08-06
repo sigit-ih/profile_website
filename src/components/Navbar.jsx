@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import DarkModeToggle from "../context/DarkModeToggle";
-import { useTranslation } from "react-i18next";
 import LogoImage from "../assets/images/logo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
-export default function Navbar() {
-  const { t, i18n } = useTranslation();
+export default function Navbar({ t, i18n, navItems }) {
   const currentLang = i18n.language;
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -19,8 +17,8 @@ export default function Navbar() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col flex-shrink-0 w-full lg:w-64 lg:min-w-64 h-20 lg:min-h-screen z-20 border-b-4 lg:border-b-0 border-r-0 lg:border-r-4 border-[#4169E1] dark:border-orange-500 lg:border-gray-200 dark:lg:border-gray-800 px-6 lg:px-0 bg-white dark:bg-gray-900">
-      <div className="navbar-header flex lg:flex-col lg:h-auto gap-3 lg:gap-0 p-3 lg:p-4 items-center justify-center">
+    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col flex-shrink-0 w-full lg:w-72 lg:min-w-72 h-20 lg:min-h-screen z-20 border-b-4 lg:border-b-0 border-r-0 lg:border-r-4 border-gray-200 dark:border-gray-800 px-6 lg:px-0 bg-white dark:bg-gray-900">
+      <div className="navbar-header flex lg:flex-col lg:h-auto gap-3 lg:gap-0 p-3 lg:p-4 lg:pt-10 items-center justify-center">
         <Link to="/">
           <img
             src={LogoImage}
@@ -33,9 +31,6 @@ export default function Navbar() {
           <h2 className="text-xl font-bold text-[#4169E1] dark:text-orange-400">
             Sigit Ispramono Hadi
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Software Engineer
-          </p>
         </div>
         <div className="navbar-toggle flex gap-3 justify-center lg:mt-3 text-xs sm:text-sm font-semibold">
           <div className="toggle-lang grow h-7 my-auto">
@@ -64,52 +59,25 @@ export default function Navbar() {
         </div>
       </div>
 
-      <nav className="navbar-list hidden md:flex lg:block h-full sm:space-x-5 md:space-x-8 lg:space-x-0 space-y-0 lg:space-y-5 items-center text-sm lg:pt-8">
-        <Link
-          to="/"
-          className={`block transition ${
-            isActive("/")
-              ? "text-[#4169E1] dark:text-orange-400 font-bold"
-              : "hover:text-[#4169E1] dark:hover:text-orange-400"
-          }`}
-        >
-          {t("home")}
-        </Link>
-        <Link
-          to="/about"
-          className={`block transition ${
-            isActive("/about")
-              ? "text-[#4169E1] dark:text-orange-400 font-bold"
-              : "hover:text-[#4169E1] dark:hover:text-orange-400"
-          }`}
-        >
-          {t("about")}
-        </Link>
-        <Link
-          to="/skill"
-          className={`block transition ${
-            isActive("/skill")
-              ? "text-[#4169E1] dark:text-orange-400 font-bold"
-              : "hover:text-[#4169E1] dark:hover:text-orange-400"
-          }`}
-        >
-          {t("skill")}
-        </Link>
-        <Link
-          to="/project"
-          className={`block transition ${
-            isActive("/project")
-              ? "text-[#4169E1] dark:text-orange-400 font-bold"
-              : "hover:text-[#4169E1] dark:hover:text-orange-400"
-          }`}
-        >
-          {t("project")}
-        </Link>
+      <nav className="navbar-list hidden md:flex lg:block h-full lg:pl-14 lg:pt-8 sm:space-x-5 md:space-x-8 lg:space-x-0 space-y-0 lg:space-y-8 items-center lg:text-left text-sm">
+        {navItems.map((item) => (
+          <Link
+            key={item.path}
+            to={item.path}
+            className={`block transition ${
+              isActive(item.path)
+                ? "text-[#4169E1] dark:text-orange-400 font-bold"
+                : "hover:text-[#4169E1] dark:hover:text-orange-400"
+            }`}
+          >
+            {item.label}
+          </Link>
+        ))}
       </nav>
       <nav className="navbar-hamburger flex md:hidden h-full items-center">
         <button
           onClick={() => setIsOpenMenu(!isOpenMenu)}
-          aria-label={isOpenMenu ? "Toggle menu" : "Close menu"}
+          aria-label={isOpenMenu ? "Close menu" : "Toggle menu"}
         >
           {isOpenMenu ? (
             <FiX className="text-3xl" />
@@ -119,65 +87,35 @@ export default function Navbar() {
         </button>
         {isOpenMenu && (
           <div className="absolute top-0 right-0 z-60 w-screen h-screen justify-items-center text-center text-lg sm:text-xl space-y-6 flex-col p-4 bg-white dark:bg-gray-900">
-            <>
-              <button
-                onClick={() => setIsOpenMenu(false)}
-                aria-label="Toggle menu"
-              >
-                <FiX className="absolute top-6 right-6 text-3xl" />
-              </button>
+            <button
+              onClick={() => setIsOpenMenu(false)}
+              aria-label="Close menu"
+            >
+              <FiX className="absolute top-6 right-6 text-3xl" />
+            </button>
+
+            {navItems.map((item) => (
               <Link
-                to="/"
+                key={item.path}
+                to={item.path}
                 onClick={() => setIsOpenMenu(false)}
                 className={`block transition ${
-                  isActive("/")
+                  isActive(item.path)
                     ? "text-[#4169E1] dark:text-orange-400 font-bold"
                     : "hover:text-[#4169E1] dark:hover:text-orange-400"
                 }`}
               >
-                {t("home")}
+                {t(item.label)}
               </Link>
-              <Link
-                to="/about"
-                onClick={() => setIsOpenMenu(false)}
-                className={`block transition ${
-                  isActive("/about")
-                    ? "text-[#4169E1] dark:text-orange-400 font-bold"
-                    : "hover:text-[#4169E1] dark:hover:text-orange-400"
-                }`}
-              >
-                {t("about")}
-              </Link>
-              <Link
-                to="/skill"
-                onClick={() => setIsOpenMenu(false)}
-                className={`block transition ${
-                  isActive("/skill")
-                    ? "text-[#4169E1] dark:text-orange-400 font-bold"
-                    : "hover:text-[#4169E1] dark:hover:text-orange-400"
-                }`}
-              >
-                {t("skill")}
-              </Link>
-              <Link
-                to="/project"
-                onClick={() => setIsOpenMenu(false)}
-                className={`block transition ${
-                  isActive("/project")
-                    ? "text-[#4169E1] dark:text-orange-400 font-bold"
-                    : "hover:text-[#4169E1] dark:hover:text-orange-400"
-                }`}
-              >
-                {t("project")}
-              </Link>
-            </>
+            ))}
+
             <div className="absolute bottom-6 left-0 w-full justify-center items-center text-xs p-2">
               © 2025 Sigit Ispramono Hadi. All rights reserved.
             </div>
           </div>
         )}
       </nav>
-      <footer className="Footer h-auto mt-0 text-sm hidden lg:block">
+      <footer className="Footer h-auto lg:mb-2 text-sm hidden lg:block">
         <div className="justify-center items-center text-xs p-2">
           © 2025 Sigit Ispramono Hadi. All rights reserved.
         </div>

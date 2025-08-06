@@ -1,9 +1,6 @@
 import Timeline from "../components/Timeline";
-import { useTranslation } from "react-i18next";
 
-export default function AboutPage() {
-  const { t } = useTranslation();
-
+export default function AboutPage({ t }) {
   return (
     <div className="about-page flex flex-col h-screen w-full max-w-full overflow-hidden bg-white dark:bg-gray-900 justify-start text-left p-[5vw] lg:p-10 pt-[100px] lg:pt-10">
       <div className="about-top w-full h-fit mb-[3vw] sm:mb-6">

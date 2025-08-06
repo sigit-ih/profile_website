@@ -1,62 +1,10 @@
 import { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { BrowserRouter as Router } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./assets/styles/App.css";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import SkillPage from "./pages/SkillPage";
-import ProjectPage from "./pages/ProjectPage";
+import AppRoutes from "./AppRoutes"; 
 import Navbar from "./components/Navbar";
-import PageWrapper from "./components/PageWrapper";
-
-function AppRoutes() {
-  const location = useLocation();
-
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route
-          path="/"
-          element={
-            <PageWrapper>
-              <HomePage />
-            </PageWrapper>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <PageWrapper>
-              <AboutPage />
-            </PageWrapper>
-          }
-        />
-        <Route
-          path="/skill"
-          element={
-            <PageWrapper>
-              <SkillPage />
-            </PageWrapper>
-          }
-        />
-        <Route
-          path="/project"
-          element={
-            <PageWrapper>
-              <ProjectPage />
-            </PageWrapper>
-          }
-        />
-      </Routes>
-    </AnimatePresence>
-  );
-}
 
 export default function App() {
   const [splashScreen, setSplashScreen] = useState(true);
@@ -65,6 +13,16 @@ export default function App() {
     const timer = setTimeout(() => setSplashScreen(false), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  const { t, i18n } = useTranslation();
+
+  const navItems = [
+    { path: "/", label: t("home") },
+    { path: "/about", label: t("about") },
+    { path: "/skill", label: t("skill") },
+    { path: "/project", label: t("project") },
+    { path: "/contact", label: t("contact") },
+  ];
 
   if (splashScreen) {
     return (
@@ -86,9 +44,9 @@ export default function App() {
     <Router>
       <div className="text-center text-[#003153] dark:text-gray-300 bg-white dark:bg-gray-900">
         <div className="relative flex flex-col lg:flex-row w-full h-auto max-h-screen mb-0">
-          <Navbar />
+          <Navbar t={t} i18n={i18n} navItems={navItems}/>
           <div className="content-container flex-grow min-w-0 flex flex-col lg:overflow-hidden">
-            <AppRoutes />
+            <AppRoutes t={t} />
           </div>
         </div>
       </div>

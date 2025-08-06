@@ -46,11 +46,11 @@ export default function Certificates() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") handleCloseModal();
-      if (e.key === "ArrowLeft")
+      if (e.key === "ArrowLeft" || e.key === "a" || e.key === "A")
         setSelectedIndex(
           (prev) => (prev - 1 + certificates.length) % certificates.length
         );
-      if (e.key === "ArrowRight")
+      if (e.key === "ArrowRight" || e.key === "d" || e.key === "D")
         setSelectedIndex((prev) => (prev + 1) % certificates.length);
     };
 

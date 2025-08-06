@@ -10,7 +10,7 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import ProfileImage from "../assets/images/profile.webp";
 import CopyToClipboard from "../components/CopyToClipboard";
 
-export default function HomePage() {
+export default function HomePage({ t }) {
   return (
     <div className="home-page relative flex flex-col md:flex-row h-screen lg:h-full bg-white dark:bg-gray-900 p-[4vw] pt-[60px] lg:pt-0 items-center overflow-hidden">
       <div className="home-top w-full md:w-0 h-auto flex items-center justify-center visible md:invisible mt-16 md:mt-0">
@@ -99,10 +99,10 @@ export default function HomePage() {
           href="https://drive.google.com/file/d/1rUaXQLodomO4O6_X_CJbEvZrWb062KZF/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 w-full sm:w-auto rounded-lg font-medium text-[3vw] sm:text-lg md:text-md sm:px-16 md:px-6 py-[2vw] sm:py-3 bg-[#4169E1] dark:bg-orange-500 hover:bg-[#365ac0] dark:hover:bg-orange-600 text-white dark:text-gray-800 text-center justify-center"
+          className="inline-flex items-center gap-2 w-full sm:w-auto rounded-lg font-medium text-[3vw] sm:text-lg md:text-md sm:px-16 md:px-6 py-[2vw] sm:py-3 bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-500 text-white dark:text-gray-800 text-center justify-center"
           aria-label="Preview CV"
         >
-          Preview CV
+          {t("preview_cv")}
           <FaFileAlt className="text-white dark:text-gray-800" />
         </a>
       </div>

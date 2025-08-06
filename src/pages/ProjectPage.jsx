@@ -1,7 +1,4 @@
-import { useTranslation } from "react-i18next";
-
-export default function ProjectPage() {
-  const { t } = useTranslation();
+export default function ProjectPage({ t }) {
   const projects = t("project_lists", { returnObjects: true });
 
   return (

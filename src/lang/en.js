@@ -24,7 +24,7 @@ const en = {
         title: "Database Engineer",
         subtitle: "PT Mandiri Utama Finance",
         description:
-          "Performing corrections to customer data, objects and transactions in databases using Oracle and PostgreSQL",
+          "Perform corrections to customer data, vehicle objects and transactions in Oracle and PostgreSQL databases",
       },
       {
         year: "2023 - 2023",

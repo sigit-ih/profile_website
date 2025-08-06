@@ -24,7 +24,7 @@ const id = {
         title: "Database Engineer",
         subtitle: "PT Mandiri Utama Finance",
         description:
-          "Melakukan koreksi data nasabah, objek dan transaksi pada database menggunakan Oracle dan PostgreSQL",
+          "Melakukan koreksi data nasabah, objek kendaraan dan transaksi pada database Oracle dan PostgreSQL",
       },
       {
         year: "2023 - 2023",

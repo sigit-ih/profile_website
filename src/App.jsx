@@ -45,7 +45,7 @@ export default function App() {
       <div className="text-center text-[#003153] dark:text-gray-300 bg-white dark:bg-gray-900">
         <div className="relative flex flex-col lg:flex-row w-full h-auto max-h-screen mb-0">
           <Navbar t={t} i18n={i18n} navItems={navItems}/>
-          <div className="content-container flex-grow min-w-0 flex flex-col lg:overflow-hidden">
+          <div className="content-container flex-grow min-w-0 flex flex-col lg:overflow-hidden font-noto-sans">
             <AppRoutes t={t} />
           </div>
         </div>

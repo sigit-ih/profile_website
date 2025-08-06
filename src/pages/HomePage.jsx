@@ -44,7 +44,7 @@ export default function HomePage({ t }) {
           <li>
             <h4 className="flex justify-end items-center gap-2">
               <a
-                href="https://www.linkedin.com/in/sigitispramonohadi/"
+                href="https://www.linkedin.com/in/sigitispramono/"
                 className="underline hover:text-[#4169E1] dark:hover:text-orange-400"
                 target="_blank"
                 rel="noreferrer"

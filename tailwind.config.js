@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Google Sans', 'ui-sans-serif', 'system-ui'],
+        'noto-sans': ['Noto Sans', 'sans-serif'],
       }
     },
   },

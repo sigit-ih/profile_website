@@ -95,7 +95,7 @@ export default function Certificates() {
           ref={modalRef}
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 transition-opacity duration-300"
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 transition-opacity duration-300"
           onClick={handleModalClick}
         >
           {/* Position Indicator */}

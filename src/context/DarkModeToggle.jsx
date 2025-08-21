@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 
-function DarkModeToggle() {
+function DarkModeToggle({ position = "nav" }) {
   const [isDark, setIsDark] = useState(false);
+  const isNav = position === "nav";
+  const darkModeVisibility = isNav ? "flex" : "flex md:hidden";
+  const bgIcon = isNav ? "p-1" : "p-3 rounded-3xl bg-[#003153]/30 dark:bg-gray-300/30 hover:bg-[#001f33]/30 hover:dark:bg-gray-300/30";
+  const iconSize = isNav ? "size-6" : "size-12";
 
   useEffect(() => {
     const stored = localStorage.getItem("dark-mode");
@@ -27,16 +31,16 @@ function DarkModeToggle() {
   };
 
   return (
-    <div className="toggle-dark flex flex-col w-fit justify-center">
+    <div className={`toggle-dark ${darkModeVisibility} flex-col w-fit justify-center ${bgIcon}`}>
       <button
         onClick={toggleDarkMode}
         aria-label="Toggle dark mode"
-        className="relative cursor-pointer p-1"
+        className="relative cursor-pointer"
       >
         {isDark ? (
-          <FiMoon className="size-6 fill-[#4169E1] stroke-2 stroke-[#4169E1]" />
+          <FiMoon className={`${iconSize} fill-[#4169E1] stroke-2 stroke-[#4169E1]`} />
         ) : (
-          <FiSun className="size-6 fill-orange-400 stroke-1 stroke-orange-400" />
+          <FiSun className={`${iconSize} fill-orange-400 stroke-1 stroke-orange-400`} />
         )}
       </button>
     </div>

@@ -9,7 +9,7 @@ export default function ContactPage({ t }) {
       <div className="contact-bottom flex flex-col flex-grow w-full min-h-0">
         <section className="contact-section h-auto min-h-fit">
           <p className="text-[3vw] sm:text-base lg:text-lg">
-            {t("contact_desc")}
+            {/* {t("contact_desc")} */}
           </p>
         </section>
       </div>

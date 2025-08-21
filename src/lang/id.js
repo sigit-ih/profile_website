@@ -75,6 +75,46 @@ const id = {
         link: "https://sigit-ispramono.vercel.app",
         github: "https://github.com/sigit-ih/profile_website",
       },
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Website Portofolio Pribadi",
+        description:
+          "Portofolio pribadi responsif yang dibuat dengan React dan Tailwind CSS. Fiturnya meliputi mode gelap, dukungan multibahasa (Inggris & Indonesia), dan CV yang dapat diunduh.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
     ],
   },
 };

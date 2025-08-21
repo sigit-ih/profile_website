@@ -2,7 +2,7 @@ export default function ProjectPage({ t }) {
   const projects = t("project_lists", { returnObjects: true });
 
   return (
-    <div className="project-page flex flex-col h-screen p-[5vw] lg:p-10 pt-[100px] lg:pt-10 overflow-hidden">
+    <div className="project-page flex flex-col h-screen p-[5vw] lg:p-10 pt-[100px] lg:pt-10 overflow-hidden bg-white dark:bg-gray-900">
       <h2 className="project-title h-auto text-2xl sm:text-3xl font-bold mb-[2.6vw] sm:mb-5 mx-auto text-center text-[#4169E1] dark:text-orange-400">
         {t("project")}
       </h2>

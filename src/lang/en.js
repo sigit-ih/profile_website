@@ -75,6 +75,46 @@ const en = {
         link: "https://sigit-ispramono.vercel.app",
         github: "https://github.com/sigit-ih/profile_website",
       },
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
+      {
+        title: "Personal Portfolio Website",
+        description:
+          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
+        technologies: ["React.js", "Tailwind CSS"],
+        link: "https://sigit-ispramono.vercel.app",
+        github: "https://github.com/sigit-ih/profile_website",
+      },
     ],
   },
 };

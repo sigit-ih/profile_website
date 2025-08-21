@@ -94,7 +94,7 @@ export default function App() {
             <AppRoutes t={t} />
           </div>
           <PaginationNav navItems={navItems}/>
-          <div className="flex md:hidden absolute bottom-5 right-5">
+          <div className="flex md:hidden absolute bottom-16 right-5">
             <DarkModeToggle position="bottom" />
           </div>
         </div>

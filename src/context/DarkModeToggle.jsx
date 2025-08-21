@@ -5,8 +5,8 @@ function DarkModeToggle({ position = "nav" }) {
   const [isDark, setIsDark] = useState(false);
   const isNav = position === "nav";
   const darkModeVisibility = isNav ? "flex" : "flex md:hidden";
-  const bgIcon = isNav ? "p-1" : "p-3 rounded-3xl bg-[#003153]/30 dark:bg-gray-300/30 hover:bg-[#001f33]/30 hover:dark:bg-gray-300/30";
-  const iconSize = isNav ? "size-6" : "size-12";
+  const bgIcon = isNav ? "p-1" : "p-2 rounded-3xl bg-[#003153]/30 dark:bg-gray-300/30 hover:bg-[#001f33]/30 hover:dark:bg-gray-300/30";
+  const iconSize = isNav ? "size-6" : "size-10";
 
   useEffect(() => {
     const stored = localStorage.getItem("dark-mode");

@@ -7,7 +7,7 @@ const isMobile =
   typeof window !== "undefined" &&
   window.matchMedia("(max-width: 768px)").matches;
 
-const routes = ["/", "/about", "/skill", "/project"];
+const routes = ["/", "/about", "/skill", "/project", "/contact"];
 
 export default function PageWrapper({ children }) {
   const navigate = useNavigate();
@@ -36,18 +36,17 @@ export default function PageWrapper({ children }) {
   const variants = {
     initial: {
       opacity: 0,
-			x: isMobile ? (direction * 100) : 800,
+			x: isMobile ? (direction * 100) : -50,
     },
     animate: {
       opacity: 1,
       x: 0,
-			y: 0,
-      transition: { duration: 0.2, ease: "easeInOut" },
+      transition: { duration: 0.125, ease: "easeInOut", delay: 0.075 },
     },
     exit: {
       opacity: 0,
-      x: isMobile ? direction * -100 : -800,
-      transition: { duration: 0.15, ease: "easeInOut" },
+      x: isMobile ? direction * -100 : -50,
+      transition: { duration: 0.125, ease: "easeInOut" },
     },
   };
 

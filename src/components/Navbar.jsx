@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import DarkModeToggle from "../context/DarkModeToggle";
+import DarkModeToggle from "./DarkModeSwitch";
 import LogoImage from "../assets/images/logo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -17,7 +17,7 @@ export default function Navbar({ t, i18n, navItems }) {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col w-full lg:w-64 lg:min-w-64 h-20 lg:min-h-screen px-6 lg:px-0 z-20 border-b-4 lg:border-b-0 border-r-0 lg:border-r-4 border-gray-200 dark:border-gray-800 bg-gray-200 dark:bg-gray-800 shadow-lg">
+    <div className="navbar absolute lg:static flex justify-between lg:justify-normal lg:flex-col w-full lg:w-64 lg:min-w-64 h-20 lg:min-h-screen px-6 lg:px-0 z-20 bg-white dark:bg-gray-700 shadow-lg">
       <div className="navbar-header flex lg:flex-col lg:h-auto gap-3 lg:gap-0 p-3 lg:p-4 lg:pt-10 items-center justify-center">
         <Link to="/">
           <img
@@ -38,8 +38,8 @@ export default function Navbar({ t, i18n, navItems }) {
               onClick={() => changeLanguage("id")}
               className={`h-full px-3 py-1 rounded-l ${
                 currentLang === "id"
-                  ? "bg-[#4169E1] dark:bg-orange-400 text-gray-200 dark:text-gray-800"
-                  : "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200"
+                  ? "bg-[#4169E1] dark:bg-orange-400 text-gray-100 dark:text-gray-800"
+                  : "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100"
               }`}
             >
               ID
@@ -48,8 +48,8 @@ export default function Navbar({ t, i18n, navItems }) {
               onClick={() => changeLanguage("en")}
               className={`h-full px-3 py-1 rounded-r ${
                 currentLang === "en"
-                  ? "bg-[#4169E1] dark:bg-orange-400 text-gray-200 dark:text-gray-800"
-                  : "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200"
+                  ? "bg-[#4169E1] dark:bg-orange-400 text-gray-100 dark:text-gray-800"
+                  : "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100"
               }`}
             >
               EN
@@ -88,7 +88,7 @@ export default function Navbar({ t, i18n, navItems }) {
           )}
         </button>
         {isOpenMenu && (
-          <div className="absolute top-0 right-0 z-60 w-screen h-screen justify-items-center text-center text-lg sm:text-xl space-y-6 flex-col p-4 bg-gray-200 dark:bg-gray-800">
+          <div className="absolute top-0 right-0 z-60 w-screen h-screen justify-items-center text-center text-lg sm:text-xl space-y-6 flex-col p-4 bg-gray-100 dark:bg-gray-800">
             <button
               onClick={() => setIsOpenMenu(false)}
               aria-label="Close menu"

@@ -1,16 +1,24 @@
 const en = {
   translation: {
     home: "Home",
-    about: "About Me",
+    about: "About",
     skill: "Skills",
     certificate: "Certificates",
-    project: "Github Project",
-    contact: "Contact Me",
+    project: "Project",
+    contact: "Contact",
     preview_cv: "Preview CV",
     about_desc:
       "Hello, I'm Sigit Ispramono Hadi. I'm a developer with a focus on developing web interfaces using React, Tailwind, and JavaScript. I enjoy building clean, user-friendly, and functional websites. I'm deeply interested in Web Development and Artificial Intelligence. I believe that technology is always evolving, therefore I committed to continuously learn and improve my skills. I actively participate in various webinars, training programs, and self-explorations to deepen my knowledge in both web development and the use of data and AI. For me, every project is an opportunity to grow and discover something new.",
-    feedback_success: "Copied to clipboard!",
-    feedback_failed: "Failed to copy!",
+    copy_success: "Copied to clipboard!",
+    copy_failed: "Failed to copy!",
+    first_name: "First Name",
+    last_name: "Last Name",
+    email: "Email",
+    message: "Message",
+    submit: "Submit",
+    submit_success: "Message sent successfully!",
+    submit_failed: "Failed to send message, please try again.",
+    submit_error: "An error occurred while sending the message.",
     timeline: [
       {
         year: "2025",
@@ -67,46 +75,6 @@ const en = {
       },
     ],
     project_lists: [
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "https://sigit-ispramono.vercel.app",
-        github: "https://github.com/sigit-ih/profile_website",
-      },
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "https://sigit-ispramono.vercel.app",
-        github: "https://github.com/sigit-ih/profile_website",
-      },
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "https://sigit-ispramono.vercel.app",
-        github: "https://github.com/sigit-ih/profile_website",
-      },
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "https://sigit-ispramono.vercel.app",
-        github: "https://github.com/sigit-ih/profile_website",
-      },
-      {
-        title: "Personal Portfolio Website",
-        description:
-          "A responsive personal portfolio built with React and Tailwind CSS. Features include dark mode, multi-language support (English & Indonesian), and downloadable CV.",
-        technologies: ["React.js", "Tailwind CSS"],
-        link: "https://sigit-ispramono.vercel.app",
-        github: "https://github.com/sigit-ih/profile_website",
-      },
       {
         title: "Personal Portfolio Website",
         description:

@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import SkillPage from "./pages/SkillPage";
 import ProjectPage from "./pages/ProjectPage";
-// import ContactPage from "./pages/ContactPage";
+import ContactPage from "./pages/ContactPage";
 import PageWrapper from "./components/PageWrapper";
 
 const routesData = [
@@ -12,7 +12,7 @@ const routesData = [
   { path: "/about", Component: AboutPage },
   { path: "/skill", Component: SkillPage },
   { path: "/project", Component: ProjectPage },
-  // { path: "/contact", Component: ContactPage },
+  { path: "/contact", Component: ContactPage },
 ];
 
 function AppRoutes({ t }) {

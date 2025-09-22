@@ -63,14 +63,14 @@ export default function HomePage({ t }) {
         </ul>
 
         <div className="grid md:hidden grid-cols-3 w-fit min-w-[40vw] sm:min-w-60 h-auto mx-auto mb-[4vw]">
-          <CopyToClipboard type="email" />
+          <CopyToClipboard type="email" page="home" />
           <div className="flex items-center justify-center">
             <a
               href="https://www.linkedin.com/in/sigitispramonohadi/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              className="flex size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-500"
+              className="flex size-[10vw] sm:size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-500"
             >
               <FaLinkedinIn className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
             </a>
@@ -81,7 +81,7 @@ export default function HomePage({ t }) {
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
-              className="flex size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-500"
+              className="flex size-[10vw] sm:size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-500"
             >
               <TbBrandGithubFilled className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
             </a>

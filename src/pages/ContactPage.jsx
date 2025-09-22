@@ -16,7 +16,7 @@ export default function ContactPage({ t }) {
           <ContactForm />
         </section>
         <section className="contacts-section flex gap-5 w-full h-auto min-h-fit mx-auto p-6 justify-center">
-          <CopyToClipboard type="email" />
+          <CopyToClipboard type="email" page="contact" />
           <div className="flex items-center justify-center">
             <a
               href="https://www.linkedin.com/in/sigitispramonohadi/"
@@ -25,7 +25,7 @@ export default function ContactPage({ t }) {
               aria-label="LinkedIn"
               className="flex size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-600"
             >
-              <FaLinkedinIn className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
+              <FaLinkedinIn className="text-3xl text-white dark:text-gray-800" />
             </a>
           </div>
           <div className="flex items-center justify-center">
@@ -36,7 +36,7 @@ export default function ContactPage({ t }) {
               aria-label="GitHub"
               className="flex size-16 items-center justify-center rounded-full bg-[#4169E1] dark:bg-orange-400 hover:bg-[#365ac0] dark:hover:bg-orange-600"
             >
-              <TbBrandGithubFilled className="text-[5vw] sm:text-3xl text-white dark:text-gray-800" />
+              <TbBrandGithubFilled className="text-3xl text-white dark:text-gray-800" />
             </a>
           </div>
         </section>
